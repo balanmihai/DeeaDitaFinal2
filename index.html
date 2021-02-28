@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deea Diță</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+ 
+<div class="landing" id="landing">
+
+  <div class="landing-navbar">
+
+    <div class="landing-navbar-logo">
+        <a href="#">Deea Diță</a>
+        <div class="words">
+          <p>Breathe</p>
+          <p>Inhale</p> 
+          <p>Exhale</p>
+        </div>
+    </div>
+
+    <ul class="landing-navbar-menu">
+      <li><a href="#classes">My work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#blogs">Blogs</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    
+    <div class="toggle">
+      <input type="checkbox" class="checkbox" id="chk" />
+      <label class="label" for="chk">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
+
+    <div class="landing-navbar-settings">
+
+
+      <audio id="track">
+        <source src="music.mp3" type="audio/mpeg" />
+      </audio>
+      
+      <div id="player-container">
+        <div id="play-pause" class="play">Play</div>
+      </div>
+ 
+
+      <h4 id="time"></h4>
+    </div>
+
+  </div>
+
+  <div class="landing-center" data-aos="fade-up"
+  data-aos-duration="2000">
+
+    <h1>Journey to Self</h1>
+    <p>Bine te am gasit! Ma bucur ca ai ajuns aici. Acesta este un spatiu gandit ca o experienta, o calatorie catre un mediu deschis si respirabil, aproape de Natura.  
+      Este un spatiu pe care l am creat cu niste scopuri bine definite. Unul dintre ele este ca tu sa ajungi mai aproape de tine prin prisma experientelor, intelegerilor si conexiunilor mele.  
+      Un alt scop al acestui loc este sa ma descoperi pe mine. In ce fel exist si imi traiesc viata. Acest loc este o extensie a mea, astfel ca iti voi prezenta din ceea ce iubesc: scrisul, invataturile sacre, arta, oamenii, calatoriile, experientele de viata dar si munca mea.</p>
+
+    <!-- Circle Rotating -->
+    <button class="animated infinite rotate-full"><a href="#schedule">My Classes</a></button>
+
+  </div>
+
+  <div class="landing-footer">
+
+    <a href="#classes">
+      <h3>Explore</h3>
+      <img src="./images/arrow.svg" alt="arrow down">
+    </a>
+
+    <h4 id="date"></h4>
+    
+  </div>
+
+</div>
+
+<div class="classes" id="classes">
+    <h1>My Work</h1>
+    <div class="ore">
+      <h3>Clase YogAsana</h3>
+      <p>Sunt menite sa te aduca mai mult in Corpul tau.  
+Vom avea parte atat de clase ce ne vor ridica nivelul de energie, prin care ne vom experimenta capacitatile, dar si limitarile actuale ale Corpului, cat si clase unde vom lucra cu Sistemul Nervos prin Asane lente si blande, astfel detensionand si stabilizand Corpul si Mintea.
+
+- 45 minute posturi fizice din diferite stiluri Yoga + 5 minute Relaxare. 
+- Marti Seara & Miercuri Dimineata SI Joi Seara & Vineri Dimineata – Aceleasi Clase. 
+- 8 Clase/Luna/2 Clase/Saptamana.
+
+Combinatii posibile Abonament:
+1. Ambele Clase Dimineata sau  
+2. Ambele Clase Seara sau 
+3. Marti Seara si Vineri Dimineata sau  
+4. Miercuri Dimineata si Joi Seara
+
+- Aceleasi 2 Clase/Saptamana alese la Inceputul Lunii. 
+- Vom practica mereu in Primele 4 saptamani Full dintr o Luna. 
+
+Cost: 
+- Abonament 8 Clase/Luna/2 Clase/Saptamana - 117 Lei 
+- Clasa Individuala – 21 Lei 
+- Abonamentul de 4 saptamani pe Luna Martie incepe Marti, 2 Martie si se incheie Vineri, 26 Martie, inclusiv. 
+</p></div>
+<div class="ore">
+  <h3>Ateliere de Luna Plina si Luna Noua</h3>
+  <p>In fiecare luna o sa ne bucuram impreuna de o experienta integrativa in care vom implica cele trei elemente ce concep fiinta umana: Corp-Minte-Spirit. O sa ne folosim de incarcatura energetica unica prin prisma Lunii si a Zodiei in care aceasta se afla, astfel ca ne vom juca cu diferite tehnici, practici si invataturi. De la Dans Neconventional, la recitat Mantre, Sound Bathuri, Ceremonii de Cacao, Meditatii Active si Dinamice, pana la Tipat Necontrolat.</p></div>
+    <div class="soon">
+      <p>
+Curand in format Fizic sau Online: 
+<a href="">Pranayama Workshop</a>
+<a href="">Yoga Philosophy Class </a>
+<a href="">Ecstatic Dance Session</a></p></div>
+
+    <div class="link-review">
+      <a href="#reviews">Citeste putin mai jos Reviewurile “Eu cine Sunt?” - primul program pe care l am creat, sustinut timp de 9 Luni si incheiat recent.</a>
+    </div>
+
+
+  <div class="classes-arrow">
+    <a href="#landing">
+      <img src="./images/arrow.svg" alt="">
+    </a>
+  </div>
+
+  <h3 class="classes-reminder" id="reminder"></h3>
+
+  <svg width="1920" height="146" viewBox="0 0 1920 146" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M-26 0.699951L1.375 6.81152C28.75 13.3843 83.5 24.9156 138.25 49.9384C193 74.4999 247.75 111.4 302.5 111.4C357.25 111.4 412 74.4999 466.75 62.1615C521.5 50.2843 576.25 61.8156 631 74.4999C685.75 87.1843 740.5 98.7156 795.25 99.0615C850 98.7156 904.75 87.1843 959.5 92.9499C1014.25 98.7156 1069 124.084 1123.75 129.85C1178.5 135.616 1233.25 124.084 1288 117.512C1342.75 111.4 1397.5 111.4 1452.25 111.4C1507 111.4 1561.75 111.4 1616.5 86.8384C1671.25 61.8156 1726 13.3843 1780.75 13.0384C1835.5 13.3843 1890.25 61.8156 1917.62 86.8384L1945 111.4V259H1917.62C1890.25 259 1835.5 259 1780.75 259C1726 259 1671.25 259 1616.5 259C1561.75 259 1507 259 1452.25 259C1397.5 259 1342.75 259 1288 259C1233.25 259 1178.5 259 1123.75 259C1069 259 1014.25 259 959.5 259C904.75 259 850 259 795.25 259C740.5 259 685.75 259 631 259C576.25 259 521.5 259 466.75 259C412 259 357.25 259 302.5 259C247.75 259 193 259 138.25 259C83.5 259 28.75 259 1.375 259H-26V0.699951Z" fill="#AFBE7D"/>
+  </svg>
+    
+</div>
+
+<div class="schedule" id="schedule">
+
+  <h3 class="schedule-reminder" id="reminder"></h3>
+  <p class="schedule-left" data-aos="fade-right"
+  data-aos-duration="2000">Aici gasesti programul saptamanal al Claselor “YogAsana”, dar si alte Workshopuri sau Ateliere pe care le tin in acea saptamana. Programul va fi postat in fiecare Duminica la ora 21:00.</p>
+
+  <div class="wrapper">
+  <div class="schedule-day1" id="day1">
+    <h3>Rhythmic Hatha Yoga</h3>
+    <p>Clasa Activa, Solicitanta si Dinamica pentru depasirea limitelor fizice si mentale.
+      
+Cand? Marti, 2 Martie 2021
+Unde? Zoom
+La Cat? 19:30-20:20
+Cat? 21 Lei</p>
+  </div>
+    <div class="schedule-day2" id="day2">
+      <h3>Rhythmic Hatha Yoga</h3>
+      <p>Clasa Activa, Solicitanta si Dinamica pentru depasirea limitelor fizice si mentale.
+
+Cand? Miercuri, 3 Martie 2021
+Unde? Zoom
+La Cat? 08:30-09:20
+Cat? 21 Lei</p>
+    </div>
+    <div class="schedule-day3" id="day3">
+      <h3>Grounded Slow Yoga</h3>
+      <p>Clasa de Impamantare, Stabilizare si Centrare a Corpului si Mintii.
+
+Cand? Joi, 4 Martie 2021
+Unde? Zoom
+La Cat? 19:30-20:20
+Cat? 21 Lei</p>
+    </div>
+    <div class="schedule-day4" id="day4">
+      <h3>Grounded Slow Yoga</h3>
+      <p>Clasa de Impamantare, Stabilizare si Centrare a Corpului si Mintii.
+
+Cand? Vineri, 5 Martie 2021
+Unde? Zoom
+La Cat? 08:30-09:20
+Cat? 21 Lei</p>
+    </div>
+  </div>
+  <p class="info">
+    Cum ma inscriu?
+  deeaditaa@gmail.com
+  1. Nume
+  2. Clasa Dorita
+  3. Varsta
+  4. Oras, Tara
+  5. Numar de Telefon
+  6. Ai Revolut?</p>
+</div>
+
+<!-- JS - Random word -->
+<div class="pause" id="pause">
+  <div class="words">
+    <p>Resilience</p>
+    <p>Integrity</p>
+    <p>Balance</p>
+  </div>
+
+</div>
+
+<div class="reviews" id="reviews">
+
+  <svg width="1920" height="221" viewBox="0 0 1920 221" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1945 220.3L1917.62 214.188C1890.25 207.615 1835.5 196.084 1780.75 171.061C1726 146.5 1671.25 109.6 1616.5 109.6C1561.75 109.6 1507 146.5 1452.25 158.838C1397.5 170.715 1342.75 159.184 1288 146.5C1233.25 133.815 1178.5 122.284 1123.75 121.938C1069 122.284 1014.25 133.816 959.5 128.05C904.75 122.284 850 96.9155 795.25 91.1499C740.5 85.3843 685.75 96.9155 631 103.488C576.25 109.6 521.5 109.6 466.75 109.6C412 109.6 357.25 109.6 302.5 134.162C247.75 159.184 193 207.616 138.25 207.962C83.5 207.616 28.75 159.184 1.37499 134.162L-26 109.6L-26 -38L1.37498 -38C28.75 -38 83.5 -38 138.25 -38C193 -38 247.75 -38 302.5 -38C357.25 -38 412 -38 466.75 -38.0001C521.5 -38.0001 576.25 -38.0001 631 -38.0001C685.75 -38.0001 740.5 -38.0001 795.25 -38.0001C850 -38.0001 904.75 -38.0001 959.5 -38.0001C1014.25 -38.0001 1069 -38.0001 1123.75 -38.0001C1178.5 -38.0001 1233.25 -38.0001 1288 -38.0001C1342.75 -38.0001 1397.5 -38.0001 1452.25 -38.0001C1507 -38.0001 1561.75 -38.0001 1616.5 -38.0002C1671.25 -38.0002 1726 -38.0002 1780.75 -38.0002C1835.5 -38.0002 1890.25 -38.0002 1917.62 -38.0002L1945 -38.0002L1945 220.3Z" fill="#AFBE7D"/>
+    </svg>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-container">
+            <p class="d-block">Pot sa spun sincer ca inainte de sedintele Yoga cu Deea, nu prea credeam ca Yoga e de mine. Trainerii la care am fost fie tratau Yoga comercial, ca pe o clasa de stretching, fie pur si simplu nu rezonam cu ei. Noroc de sora mea, care m-a convins sa incerc. Dar prin participarea la orele Deei, mi-am dat seama ca Yoga poate fi pentru fiecare dintre noi, daca gasim persoana potrivita sa ne ajute sa ne conectam cu noi insine... prin limbajul Yoga: miscare, experiente senzoriale, meditatie, exercitii de respiratie. Eu asa il vad, ca un limbaj prin care ma pot exprima diferit. Asa cum se intampla cu fiecare limba noua, pentru invatarea limbajului ai nevoie de cineva ca Deea care te ajuta sa intelegi gramatica, vocabularul, si pronuntia...anume posturile, respiratia si meditatia. Si odata ce intelegi, putin cate putin, cu rabdare si disciplina aceste lucruri, incepi sa te exprimi liber, sa te joci cu expresii, sa folosesti metafore, sa vorbesti cu tine insuti in aceasta noua limba...Yoga m-a ajutat foarte mult sa "traduc" tot ce simt si ce gandesc, si ce ma apasa sau ce ma bucura in miscare, emotie, prezenta. Nu pot sa notez decat subiectiv Atelierele de Luna Noua sau Plina, prin prisma propriilor experiente. Unele mai profunde, altele mai pasnice, unele mai tumultoase, altele mai extatice. Motiv pentru care incurajez pe oricine sa incerce o clasa cu Deea, inainte sa interiorizeze parerile altora despre clase. Consider ca fiecare dintre noi a experimentat diferit clasele, si asa cum eu am ramas recunoscatoare surorii mele, imi doresc sa impartasesc aceasta recunostinta si cu voi, spundand doar atat: incearca, pentru tine, caci este despre tine.</p>
+          </div>
+          <div class="carousel-caption">
+            <h5 class="reviews-data">"Eu cine Sunt?" Monica, 26 - Bucuresti, Ro</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-container">
+            <p class="d-block">Yoga, primul lucru la care ma gândeam când auzeam acest cuvânt era asane și atât. Yoga cu Deea, o mie de lucruri îmi trec prin cap când ma gândesc la asta acum, atât de multe învățături și senzații. E greu sa exprimi in cuvinte sentimente pe care nu le-ai mai trăit niciodată. As spune ca asta este ceea ce am descoperit nou cu Deea, emoțiile mele. Meditațiile prin care treceam cu mantre pe fundal, ma făceau sa simt anumite senzații atât de eliberatoare, ma simteam împăcată cu mine. Încă îmi aduc aminte o meditație de la primele mele ședințe cu Deea, era vorba despre copilul din noi si puteam sa ma văd pe mine însămi mergând printr-o pădure, pana am ajuns pe o pajiște unde m-am văzut tot pe mine dar diferit, as spune ca m-am văzut pe mine cea pura. Acea ‘eu’ din ziua aceea a fost alături de mine la fiecare meditație, inclusiv și in ziua de azi, încă se afla acolo cu mine, încă o pot vedea in mintea mea. Acea ‘eu’ doar observa și intelege. Sunt și mereu o sa ii fiu recunoscătoare Deei pentru acea ‘eu’ cu care interacționez mereu, in special in timpul meditațiile ghidate de Deea. Aceasta fata, cu o energie incredibila, energie pe care sincer o simți chiar și prin intermediul ecranelor, este absolut minunata. Chit ca nu o cunosc personal, eu o simt ca pe o prietena, pe ea și pe toate fetele minunate cu care lucram in fiecare zi la orele de yoga. Fiecare ora de yoga cu Deea te face sa te bucuri de prezent, te face sa te bucuri ca trăiești și iți deschide ochii către perspective și emoții de care nici nu ai idee ca exista. Devotamentul Deei, in a te ajuta sa te descoperi pe tine prin împărtășirea învățăturilor ei și prin iubirea pe care ți-o oferă, îl poți observa de la prima ședința cu ea. Tot ce face Deea pentru oameni, este din adevarata pasiune și iubire, iar cu ajutorul și susținerea ei, am reușit sa îmi încep călătoria către adevăratul ‘eu’.</p>
+          </div>
+          <!--  -->
+          <div class="carousel-caption">
+            <h5 class="reviews-data">"Eu cine Sunt?" Diana, 21 - Bangor, Wales</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-container">
+            <p class="d-block">Nu sunt de prea mult timp in programul "Eu cine Sunt?", asa ca nu pot sa dau un feedback bazat pe luni de practica, dar ma rezum la ceea ce simt in momentul asta pentru ca se simte chiar si daca sunt doar de doua luni. In primul rand, am simtit emotie, asta e primul lucru pe care l simt cand ma gandesc la acest program. Emotie pura, emotie colectiva si vibranta care sunt extrem de fericita ca se simte chiar daca programul e online, nici nu pot sa mi imaginez cum ar fi daca am fi toti f2f, dar abia astept. M ai facut sa accesez niste portite in capul meu, pe care nici nu stiam ca le am si treaba asta m a facut atat de curioasa si mi a intarit mai tare dorinta de explorare si de descoperire a lucrurilor care se afla in interior, zona subtila, nevazuta cu ochiul liber din exterior dar simtita profund in interior. Sa ma inscriu in programul asta a fost pasul minim catre calatoria pe care urmeaza sa o fac, desi nu stiu inca scopul si incerc sa raspund unor intrebari. Cum spuneam la inceput  am sa ma raportez la prezent si la ceea ce simt acum si acest lucru e durerea. E o durere puternica dar atat de placuta, as rade si as plange in acelasi timp, as dansa si as urla din toate incheiturile, as fugi si m as tranti pe jos. Oricum, e o durere benefica dupa ce ajungi sa constientizezi faptul ca durerea e evolutia. Si ma bucur ca o vad asa si ca o simt. Asta pot spune momentan despre ceea ce simt dar abia astept sa continui programul si sa vad ce descoperiri minunate voi face in interior cu ajutorul tau. Esti un sprijin urias si stiu ca nu e tocmai usor sa ridici atatea sufletele de la pamant caci si tu mai ai nevoie uneori de tine. Ah si inca ceva, te simt foarte aproape la fiecare clasa, modul in care vorbesti, faptul ca repeti de fiecare data si de mai multe ori ceea ce trebuie sa facem, se simte foarte bine.</p>
+          </div>
+          <div class="carousel-caption">
+            <h5 class="reviews-data">"Eu cine Sunt?" Adria, 20 - Targu Mures, Ro</h5>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="carousel-container">
+            <p class="d-block">Când a început programul, am mers constant timp de câteva luni, apoi am început să particip mai rar. In perioada in care nu mai practicam mai deloc yoga cred că am văzut cel mai bine schimbările pe care le-a adus în viața mea. Toate învățăturile, tehnicile de respirație, ideile, s-au lipit de mine și m-au ajutat sa trec altfel printr-o perioada mai dificila. Am mai observat faptul că, încercând să mă înțeleg și să mă cunosc pe mine, am inceput sa fiu mai empatica si mai înțelegătoare cu cei din jur. Am devenit mai conștientă, mai atenta, am inceput să îmi pun întrebări, de ce simt asta, de ce am reacționat așa, de unde vine sentimentul asta; am inceput să îmi acord mai mult timp, și să încerc să înlătur frica asta de a sta singura cu gândurile mele. Și da, a fost greu, pentru că de multe ori nu erau stări plăcute, însă am înțeles că trebuie să simt, sa trec prin ele, pentru a putea schimba ceva. Legat de asta, apreciez enorm faptul că Deea nu promovează niciun fel de toxic positivity, care mie personal mi-a făcut mult rău în trecut, când credeam că așa trebuie privite lucrurile.  
+
+              Ca sa povestesc puțin și despre ce am simțit mai exact, in profunzime, la clase, am sa dau exemplu meditațiile. La primele meditații am realizat cat de ușor îmi fuge mintea, cate gânduri, și mai important, ce gânduri mă tot consumau. Îmi era foarte greu sa mă concentrez, dar prin practica și felul Deei de a ne ghida, după un timp începusem să simt că intru într-un spațiu diferit, subtil. La final aveam mai multa claritate mentala și liniște mai ales. </p>
+          </div>
+          <!--  -->
+          <div class="carousel-caption">
+            <h5 class="reviews-data">“Eu cine Sunt?" Alexandra, 20 – Iasi, Ro</h5>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="carousel-container">
+            <p class="d-block">
+              La atelierele de luna Plina sau Noua este de fiecare data o energie diferită, pe care o simțim fiecare extrem de puternic. E o experiență personală, prin care trecem totuși împreună, in spațiul frumos pe care il creăm. Ce mi s-a părut interesant a fost sa simt energia zodiei in care era luna la momentul respectiv; atelierele sunt structurate și gândite astfel încât să intri și să simți și mai mult emoții și senzații specifice. Atunci când am participat la un atelier de luna plina in zodia mea, adica Taur, m-am regăsit foarte mult, parcă aș fi fost acasă. Era totul foarte firesc. La unele zodii simțeam o energie străină, inconfortabila, dar care m-am făcut să văd aspecte la care mai am de lucrat, emoții/trăsături pe care le reprim, cum ar fi exprimarea liberă, inhibiții pe care le am etc. Mai de fiecare data vin persoane noi, însă m-am simtit mereu în siguranță, fiind oameni frumoși care vin cu acelasi scop ca mine, curioși să afle mai multe despre ei și despre viața. </p>
+          </div>
+          <!--  -->
+          <div class="carousel-caption">
+            <h5 class="reviews-data">"Ateliere de Luna Plina sau Noua" Alexandra, 20 – Iasi, Ro</h5>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="carousel-container">
+            <p class="d-block">  
+              Ce pot sa spun dupa lunile astea de practica cu tine e ca am invatat asa multe lucruri, am trait niste emotii foarte puternice, am ras, am plans, m-am descarcat in diferite forme si feluri in momente in care altfel ma simteam blocata si parca nu puteam sa procesez si sa integrez ceea ce mi se intampla. De la mersul pe strada mai relaxat si vocea ta pe care o auzeam acolo in spate, sa ne dam umerii pe spate si sa ne deschidem zona pieptului pentru a primi mai mult si a fi mai deschisi, la acceptarea omului din trecut, pentru ca asa cum am invatat de la tine, fara el nu eram omul de azi. De la găsirea unor raspunsuri sau confort in anumite situatii dificile, la conectarea cu comunitatea asta frumosa pe care tu ai creat-o. Sunt recunoscatoare pentru lucrurile experimentate cu ajutorul tau si pentru fiecare chestie micuta, dar de mare impact cu care raman mereu si pe care le duc mai departe. Multumesc!  </p>
+          </div>
+          <!--  -->
+          <div class="carousel-caption">
+            <h5 class="reviews-data">“Eu cine Sunt?” Eliza, 24 – Cluj-Napoca, Ro</h5>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="carousel-container">
+            <p class="d-block">Eu am participat la “Eu cine Sunt?” cam 3 luni full, am mai fost la câteva clase înainte, dar acest program m-a inițiat în Yoga. Programul m-a ajutat mult atât pe plan fizic, postura mea este alta, stau dreapta, sunt atenta la respirație și alimentație, am început să îmi cunosc corpul și să fiu mai stăpâna pe el. Cât și pe plan spiritual și personal, sunt mult mai prezentă, am fost pusă în fața a multor emoții în acest program atât negative cât și pozitive, mi-am dat seama ce îmi place, ce nu îmi place, ceea ce îmi face bine și ce nu. O întreaga călătorie într-un timp relativ scurt. Încă nu este totul roz, mai am zile când îmi este greu și nu înțeleg și mai sunt și unele clase unde apar diferite emoții, dar este foarte bine. Mulțumesc și sunt recunsocătoare pentru că am participat la acest program și că te-am cunoscut, Deea.</p>
+          </div>
+          <div class="carousel-caption">
+            <h5 class="reviews-data">“Eu cine Sunt?”  Diana, 22 – Timisoara, Ro</h5>
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="fas fa-arrow-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="fas fa-arrow-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    
+
+      <!-- <h1>Reviews</h1> -->
+    </div>
+
+
+</div>
+
+<div class="blogs" id="blogs">
+
+  <div class="section-header">
+    <div class="section-header-container">
+      <div class="section-title"><h3>Writings and Wisdom</h3></div>
+      <div class="section-order"><h3>Blogs</h3></div>
+    </div>
+  </div>
+
+  <!-- <div class="divider"></div>
+
+  <section class="project">
+    <div class="project-container">
+      <div>
+        <nav class="menu">
+          <div class="menu__item">
+            <a href="blog.html" class="menu__item-link">01. Asterisks</a>
+            <img class="menu__item-img inverted" src="images/project-one.jpeg" />
+            <div class="marquee">
+              <div class="marquee__inner">
+                <span>Asterisks</span>
+                <span>Asterisks</span>
+                <span>Asterisks</span>
+                <span>Asterisks</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="menu__item">
+            <a class="menu__item-link">02. Unlocked</a>
+            <img class="menu__item-img inverted" src="images/project-two.jpeg" />
+            <div class="marquee">
+              <div class="marquee__inner">
+                <span>Unlocked</span>
+                <span>Unlocked</span>
+                <span>Unlocked</span>
+                <span>Unlocked</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="menu__item">
+            <a class="menu__item-link">03. Offbeat Radio</a>
+            <img class="menu__item-img inverted" src="images/project-three.jpeg" />
+            <div class="marquee">
+              <div class="marquee__inner">
+                <span>Offbeat Radio</span>
+                <span>Offbeat Radio</span>
+                <span>Offbeat Radio</span>
+                <span>Offbeat Radio</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="menu__item">
+            <a class="menu__item-link">04. Brutal</a>
+            <img class="menu__item-img inverted" src="images/project-four.jpeg" />
+            <div class="marquee">
+              <div class="marquee__inner">
+                <span>Brutal</span>
+                <span>Brutal</span>
+                <span>Brutal</span>
+                <span>Brutal</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="menu__item">
+            <a class="menu__item-link">05. The Crew</a>
+            <img class="menu__item-img inverted" src="images/project-five.jpeg" />
+            <div class="marquee">
+              <div class="marquee__inner" aria-hidden="true">
+                <span>The Crew</span>
+                <span>The Crew</span>
+                <span>The Crew</span>
+                <span>The Crew</span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </section> -->
+
+  <div class="divider"></div>
+
+  <div class="blogs-footer">
+    <a href="">Author and Content Creator</a>
+    <a href="">@eusuntideea</a>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="blogs-footer">
+    <p>Design and Development</p>
+    <a href="">balaurl.work</a>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="copyright">
+    <p>Copyright 2021</p>
+  </div>
+
+
+
+</div>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+
+<script src="./js/logo.js"></script>
+<script src="./js/darkmode.js"></script>
+<script src="./js/time.js"></script>
+<script src="./js/date.js"></script>
+<script src="./js/reminder.js"></script>
+<script src="./js/drag.js"></script>
+<script src="./js/mute.js"></script>
+
+</body>
+</html>

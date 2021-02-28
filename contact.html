@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="contact.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+  <title>Contact me</title>
+</head>
+<body>
+<div class="contact">
+
+  <div class="circle up"></div>
+  <div class="circle down"></div>
+
+  <div class="navbar">
+    <div class="navbar-logo">
+      <a href="index.html">Deea Diță</a>
+      <div class="words">
+        <p>Breathe</p>
+        <p>Inhale</p> 
+        <p>Exhale</p>
+      </div>
+    </div>
+
+    <div class="navbar-settings">
+      <h4 id="time"></h4>
+    </div> 
+  </div>
+
+
+
+  <div class="center">
+    <div class="center-left" data-aos="fade-right"
+    data-aos-duration="2000">
+      <h1>Let's collaborate!</h1>
+      <a href="index.html">contact@deeadita.com</a>
+      <h3>Say Hello</h3>
+      <img src="./images/snake.png" alt="">
+    </div>
+
+    <div class="center-right" data-aos="fade-up"
+    data-aos-duration="2000">
+      <div class="contactul" data-aos="fade-up"
+      data-aos-duration="2000">
+        <form id="form" class="topBefore"  method="POST">
+          <input id="name" type="text" placeholder="Name" name="name" required>
+          <input id="email" type="email" placeholder="E-mail" name="email" required>
+          <textarea id="message" type="message" placeholder="Write me something ..." name="message" required></textarea>
+          <input id="submit" type="submit" value="GET IN TOUCH">
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+    
+    
+  <div class="footer">
+    <div class="footer-left">
+      <a href="#">@eusuntideea</a>
+      <p>Copyright 2021</p>
+    </div>
+
+    <div class="footer-centre">
+      <a href="#">Bucharest, Romania</a>
+      <p>Do you, boo</p>
+    </div>
+        
+    <div class="footer-right">
+      <a href="index.html">
+        <h3>Home</h3>
+        <img src="./images/arrow.svg" alt="arrow-right">
+      </a>
+    </div>    
+  </div>
+
+
+</div>
+<script src="./js/time.js"></script>
+<script src="./js/logo.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+  
+</body>
+</html>
